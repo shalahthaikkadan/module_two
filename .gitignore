@@ -1,0 +1,10 @@
+pycache/
+*.pyc
+venv/
+.venv/
+.ipynb_checkpoints/
+.env
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
