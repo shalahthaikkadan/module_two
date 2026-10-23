@@ -1,6 +1,6 @@
 # Module Two
 
-This module contains Python pandas practice notebooks and datasets covering Series, DataFrames, filtering, handling missing values, grouping, and sorting.
+This module contains Python pandas and matplotlib practice notebooks and datasets covering Series, DataFrames, filtering, handling missing values, grouping, sorting, and data visualization.
 
 ## 📂 Folder Structure
 
@@ -10,18 +10,47 @@ module_two/
 ├── padas_basics.ipynb
 ├── first_1_4questions.ipynb
 ├── Untitled-1.ipynb
+├── matplotlib.ipynb
+├── movies_analysis.ipynb
 │
 ├── orders.csv
 ├── new_file.csv
 ├── TV_Final.csv
 ├── tv.csv
+├── movies.csv
 │
 └── README.md
+```
+
+## 🛠️ Requirements
+
+- Python 3
+- pandas
+- matplotlib
+- numpy
+- Jupyter Notebook, or VS Code with the Jupyter extension
+
+Install the libraries with:
+
+```
+pip install pandas matplotlib numpy
 ```
 
 ## 📖 Pandas Basics
 
 `padas_basics.ipynb` covers the basics of pandas using `orders.csv`: reading a CSV file, viewing data with `head()`, `tail()`, `info()` and `describe()`, selecting columns, filtering rows, updating values, and dropping rows and missing values.
+
+## 📊 Matplotlib Basics
+
+`matplotlib.ipynb` covers data visualization with Matplotlib:
+
+- Line plots with different markers, line styles, colors and line widths
+- Adding a grid with `grid()`
+- Bar chart
+- Pie chart
+- Scatter plot
+- Histogram
+- Subplots
 
 ## 💻 Series and DataFrame Exercises
 
@@ -69,3 +98,54 @@ Sort the DataFrame by Current Price in ascending order and then by Rating in des
 
 **Question 9**
 Find the top 3 brands with the highest total selling price.
+
+## 🎬 Movie Dataset Analysis (Pandas + Matplotlib)
+
+`movies_analysis.ipynb` uses `movies.csv` to answer the questions below with pandas for the calculations and matplotlib for the charts.
+
+### Dataset columns
+
+| Column | Description |
+|---|---|
+| `title` | Movie name |
+| `release_year` | Year the movie was released |
+| `genre` | Main genre |
+| `director` | Director's name |
+| `budget_million` | Budget in millions of USD |
+| `revenue_million` | Box office revenue in millions of USD |
+| `rating` | IMDb-style rating out of 10 |
+
+> **Note:** `movies.csv` is a small practice dataset. The budget, revenue and rating values are approximate and are meant for learning, not for real research.
+
+### Questions
+
+**Question 1**
+Which movie genres generate the highest average revenue? Use `groupby()` and `mean()`, and show the result as a bar chart.
+
+**Question 2**
+Is there a correlation between a movie's budget and its revenue? Use `corr()` and a scatter plot.
+
+**Question 3**
+Which movies were the most profitable (Revenue – Budget)? Create a `profit` column, sort it with `sort_values()`, and show the top movies.
+
+**Question 4**
+Do movies with higher ratings earn more at the box office? Use `corr()` and a scatter plot of rating vs revenue.
+
+**Question 5**
+Which directors consistently produce high-rated movies? Group by director, calculate the average rating, and sort in descending order.
+
+**Question 6**
+How has the number of movies released per year changed over time? Use `value_counts()` on the release year and show a line chart.
+
+**Question 7**
+Which genre is trending recently (highest growth in number of releases)? Count the movies per genre per year using `groupby()`, then compare recent years with earlier years.
+
+## ▶️ How to Run
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/shalahthaikkadan/module_two.git
+   ```
+2. Open the folder in VS Code.
+3. Open any `.ipynb` notebook.
+4. Keep the CSV files in the same folder as the notebooks, then run the cells from top to bottom.
