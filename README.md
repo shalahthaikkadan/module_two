@@ -43,7 +43,7 @@ Work through them roughly in this order:
 
 | Order | Notebook | What it is |
 |---|---|---|
-| 1 | `pandas_basics.ipynb` | Introduction to pandas using `orders.csv` |
+| 1 | `pandas_basics.ipynb` | Introduction to pandas  |
 | 2 | `first_1_4questions.ipynb` | Practice with Series and DataFrames |
 | 3 | `matplotlib.ipynb` | Introduction to charts in matplotlib |
 | 4 | `Task-1 pandas.ipynb`, `Task-2.ipynb` | Pandas practice tasks |
